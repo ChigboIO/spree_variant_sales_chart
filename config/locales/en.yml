@@ -3,3 +3,7 @@
 
 en:
   hello: "Hello world"
+
+  spree:
+    variant_sales_chart: "Variant Sales Chart"
+    variant_sales_chart_description: "Chart for sales of different variants of a product"
