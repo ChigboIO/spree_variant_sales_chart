@@ -1,6 +1,9 @@
 Spree::Admin::ReportsController.class_eval do
   before_action :spree_variant_sales_reports_setup, only: :index
 
+  def variant_sales_chart
+  end
+
   private
 
   def spree_variant_sales_reports_setup
