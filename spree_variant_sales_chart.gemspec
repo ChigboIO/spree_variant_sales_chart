@@ -7,13 +7,13 @@ require 'spree_variant_sales_chart/version'
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_variant_sales_chart'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Provide chart of sales for different variants of a product'
+  s.description = 'This spree extension provides charts of sales of different variants of a product'
   s.version     = SpreeVariantSalesChart.version
   s.required_ruby_version = '>= 2.2.2'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
+  s.author    = 'Emmanuel Chigbo'
+  s.email     = 'chigboemmanuel@gmail.com'
   # s.homepage  = 'http://www.spreecommerce.com'
   s.license = 'BSD-3-Clause'
 
