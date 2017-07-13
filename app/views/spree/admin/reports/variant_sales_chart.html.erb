@@ -1,0 +1,26 @@
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+
+<% content_for :page_title do %>
+  <%= link_to Spree.t(:reports), spree.admin_reports_url %> /
+  <%= Spree.t(:variant_sales_chart) %>
+<% end %>
+
+<div class="well">
+  <%#= render partial: 'spree/admin/shared/report_order_criteria' %>
+</div>
+
+<div class="row">
+  <% @products.each do |product| %>
+    <div class="col-sm-4 col-xl-3">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h1 class="panel-title"><%= product.name %></h1>
+        </div>
+        <div class="panel-body">
+          <%= pie_chart @sales_chart.variants_sales_data_for(product.id), legend: 'top' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
