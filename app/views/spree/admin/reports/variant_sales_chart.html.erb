@@ -6,7 +6,9 @@
 <% end %>
 
 <div class="well">
-  <%#= render partial: 'spree/admin/shared/report_order_criteria' %>
+  <%= form_tag '', method: :get do %>
+    <%= select_tag :period, options_for_select(@sales_chart.periods, params[:period]), { class: 'form-control', onchange: 'this.form.submit()' } %>
+  <% end %>
 </div>
 
 <div class="row">
